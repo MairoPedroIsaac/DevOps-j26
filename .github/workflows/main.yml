@@ -34,6 +34,15 @@ jobs:
 
       - name: Run black
         run: black --check .
+
+
+  testing:
+    runs-on: ubuntu-24.04
+
+    steps:
+      - name: Django testing
+        run: python -m manage.py test
+      
         
       
 
